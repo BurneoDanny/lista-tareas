@@ -1,16 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> Blank </ion-title>
+    <ion-title> Lista de tareas </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <app-lista-tareas></app-lista-tareas>
-  <ion-router><ion-route component="app-lista-tareas"></ion-route>
+  <!-- <ion-router><ion-route component="app-lista-tareas"></ion-route></ion-router> -->
+  <ion-footer>
+    <ion-toolbar>
+      <ion-button routerLink="/agregar-tarea" fill="clear" slot="end">
+        Agregar tarea
+      </ion-button>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>

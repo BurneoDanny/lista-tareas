@@ -1,14 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>AgregarTarea</ion-title>
+    <ion-title> Agregar Tarea </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tarea</ion-title>
-      <ion-button>Agregar Tarea</ion-button>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Tarea</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input
+        label="Input with placeholder"
+        placeholder="Ingrese una tarea"
+      ></ion-input>
+    </ion-card-content>
+
+    <ion-button fill="clear">Agregar Tarea</ion-button>
+  </ion-card>
 </ion-content>
