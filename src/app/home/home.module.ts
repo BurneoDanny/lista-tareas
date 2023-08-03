@@ -1,12 +1,15 @@
-import { NgModule } from '@angular/core';
+import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { ListaTareasModule } from '../components/lista-tareas/lista-tareas.module';
 
-import { ListaTareasComponent } from '../components/lista-tareas/lista-tareas.component';
+
+
+
 
 
 @NgModule({
@@ -15,7 +18,8 @@ import { ListaTareasComponent } from '../components/lista-tareas/lista-tareas.co
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    ListaTareasComponent,
+    ListaTareasModule,
+
   ],
   declarations: [HomePage]
 })

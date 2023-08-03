@@ -12,11 +12,13 @@
 
     <ion-card-content>
       <ion-input
-        label="Input with placeholder"
+        [(ngModel)]="nuevaTarea"
         placeholder="Ingrese una tarea"
       ></ion-input>
     </ion-card-content>
 
-    <ion-button fill="clear">Agregar Tarea</ion-button>
+    <ion-button routerLink="/home" fill="clear" (click)="agregarTarea()"
+      >Agregar Tarea</ion-button
+    >
   </ion-card>
 </ion-content>

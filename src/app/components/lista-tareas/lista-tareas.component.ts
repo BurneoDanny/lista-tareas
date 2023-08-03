@@ -6,7 +6,6 @@ import { TareasService } from 'src/app/services/tareas.service';
   selector: 'app-lista-tareas',
   templateUrl: './lista-tareas.component.html',
   styleUrls: ['./lista-tareas.component.scss'],
-  standalone:true,
 })
 
 export class ListaTareasComponent  implements OnInit {
@@ -15,7 +14,7 @@ export class ListaTareasComponent  implements OnInit {
   constructor(private tareaService : TareasService) { }
 
   ngOnInit() {
-    this.tareas = this.tareaService.tareas;
+    this.tareas = this.tareaService.obtenerTareas();
   }
 
   eliminarTarea(index : number){
